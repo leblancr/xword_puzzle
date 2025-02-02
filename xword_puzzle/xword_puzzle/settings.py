@@ -50,12 +50,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'tdd_exercise.urls'
+ROOT_URLCONF = 'xword_puzzle.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'tdd_exercise', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'xword_puzzle', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tdd_exercise.wsgi.application'
+WSGI_APPLICATION = 'xword_puzzle.wsgi.application'
 
 
 # Database
@@ -122,4 +122,4 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'tdd_exercise', 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'xword_puzzle', 'static')]
